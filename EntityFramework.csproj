@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<!-- usado  para crear aplicaciones web (APIs, páginas web, etc.) -->
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<!-- Se usa para definir la versión de .NET -->
+		<!-- Ejemplo: usar .NET 8 para aprovechar nuevas funcionalidades y mejor rendimiento -->
+
+		<Nullable>enable</Nullable>
+		<!-- Se usa para evitar errores con valores null -->
+		<!-- Ejemplo: detectar si una variable puede ser null antes de usarla -->
+
+		<ImplicitUsings>enable</ImplicitUsings>
+		<!-- Se usa para no escribir manualmente los "using" más comunes -->
+		<!-- Ejemplo: no necesitas escribir using System; en cada archivo -->
+
+		<RootNamespace>Entity_Framework</RootNamespace>
+		<!-- Se usa como nombre base del proyecto -->
+		<!-- Ejemplo: tus clases usarán Entity_Framework.Controllers, Entity_Framework.Models -->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+		<!-- Se usa para agregar Swagger -->
+		<!-- Ejemplo: abrir el navegador en /swagger para probar endpoints como GET o POST -->
+	</ItemGroup>
+
+</Project>
